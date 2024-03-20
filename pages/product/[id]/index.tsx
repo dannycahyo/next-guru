@@ -1,6 +1,8 @@
+import Header from "@/components/Header";
+
 import type { GetServerSideProps } from "next";
 import type { GetServerSidePropsContext } from "next";
-import type { Product } from "@src/types/Product";
+import type { Product } from "@/types/Product";
 
 type ProductDetailProps = {
   product: Product;
@@ -11,8 +13,13 @@ export default function ProductDetail(props: ProductDetailProps) {
 
   return (
     <div>
-      <h1>{product?.name}</h1>
-      <p>{product?.description}</p>
+      <Header />
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <div>
+          <h1>{product?.name}</h1>
+          <p>{product?.description}</p>
+        </div>
+      </div>
     </div>
   );
 }
