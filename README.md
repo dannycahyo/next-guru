@@ -2,6 +2,13 @@
 
 This repository contains the code for the Next.js workshop. The workshop is divided into multiple lessons, each focusing on a specific topic in Next.js. The code for each lesson is available in a separate branch.
 
+## Pre-requisites
+
+Before you start with the workshop, make sure you have the following installed on your machine:
+
+- [Node.js](https://nodejs.org) (v18 or later)
+- [Yarn](https://yarnpkg.com) (v1.22 or later)
+
 ## Getting Started
 
 To get started with the workshop, clone this repository and install the dependencies using the following commands:
