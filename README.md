@@ -88,3 +88,13 @@ This will start the development server and you can access the application at [ht
   - Configuring different authentication providers
   - Protecting pages and API routes
   - Understanding session management with NextAuth.js
+
+## Lesson 7: Integrating with tRPC
+
+- **Branch Name:** trpc-integration
+- **Description:** This lesson covers integrating tRPC in a Next.js application.
+- **Topics Covered:**
+  - Setting up tRPC in a Next.js project
+  - Defining your API routes using tRPC routers
+  - Querying your API from the client using tRPC client
+  - Understanding the benefits of type safety with tRPC
