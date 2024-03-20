@@ -6,7 +6,6 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const dummyProductIds = [1, 2, 3];
   return (
     <>
       <Head>
@@ -26,11 +25,7 @@ export default function Home() {
         <div>
           <h1>Welcome to our store</h1>
           <p>Check out our latest products:</p>
-          {dummyProductIds.map((productId) => (
-            <Link key={productId} href={`/product/${productId}`}>
-              <a>Product {productId}</a>
-            </Link>
-          ))}
+          <Link href="/product">Product Page</Link>
         </div>
       </main>
     </>
