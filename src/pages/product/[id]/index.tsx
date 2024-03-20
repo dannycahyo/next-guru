@@ -1,20 +1,13 @@
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
-
+import type { GetServerSideProps } from "next";
+import type { GetServerSidePropsContext } from "next";
 import type { Product } from "@src/types/Product";
 
-export default function ProductDetail() {
-  const router = useRouter();
-  const { id } = router.query;
-  const [product, setProduct] = useState<Product>();
+type ProductDetailProps = {
+  product: Product;
+};
 
-  useEffect(() => {
-    if (id) {
-      fetch(`/api/products/${id}`)
-        .then((response) => response.json())
-        .then((data) => setProduct(data));
-    }
-  }, [id]);
+export default function ProductDetail(props: ProductDetailProps) {
+  const { product } = props;
 
   return (
     <div>
@@ -23,3 +16,19 @@ export default function ProductDetail() {
     </div>
   );
 }
+
+export const getServerSideProps: GetServerSideProps<
+  ProductDetailProps
+> = async (context: GetServerSidePropsContext) => {
+  const { params } = context;
+  const id = params?.id;
+
+  const res = await fetch(`http://localhost:3000/api/products/${id}`);
+  const product = await res.json();
+
+  return {
+    props: {
+      product,
+    },
+  };
+};

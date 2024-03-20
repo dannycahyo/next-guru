@@ -1,26 +1,26 @@
-# Creating API Routes in Next.js
+# Server-Side Data Fetching with getServerSideProps in Next.js
 
-This branch covers the creation of API routes in Next.js.
+This branch covers server-side data fetching in Next.js using the `getServerSideProps` method.
 
 ## Description
 
-API routes in Next.js allow us to create serverless functions to handle various HTTP requests. This lesson teaches how to set up API routes in the `pages/api` directory, handle different HTTP methods, and access request data within API route handlers.
+In Next.js, we can fetch data on the server before rendering a page using `getServerSideProps`. This lesson teaches how to implement server-side data fetching, allowing us to fetch data dynamically and pass it to our page components.
 
 ## Getting Started
 
-To get started with this lesson, clone this repository and switch to the `api-routes` branch.
+To get started with this lesson, clone this repository and switch to the `server-side-fetching` branch.
 
 ```bash
 git clone https://github.com/dannycahyo/next-guru.git
-git checkout api-routes
+git checkout server-side-fetching
 ```
 
 ## Lesson Content
 
-- Set up API routes in the pages/api directory.
-- Handle different HTTP methods in API routes.
-- Access request data within API route handlers.
+- Understand server-side rendering in Next.js.
+- Fetch data on the server using `getServerSideProps`.
+- Pass fetched data to page components.
 
 ## Further Reading
 
-- [API Routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes)
+- [getServerSideProps](https://nextjs.org/docs/pages/building-your-application/data-fetching/get-server-side-props)

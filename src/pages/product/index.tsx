@@ -1,16 +1,13 @@
 import Link from "next/link";
-import { useEffect, useState } from "react";
 
 import type { Product } from "@src/types/Product";
 
-export default function Product() {
-  const [products, setProducts] = useState<Product[]>([]);
+type ProductProps = {
+  products: Product[];
+};
 
-  useEffect(() => {
-    fetch("/api/products")
-      .then((response) => response.json())
-      .then((data) => setProducts(data));
-  }, []);
+export default function Product(props: ProductProps) {
+  const { products } = props;
 
   return (
     <div>
@@ -27,4 +24,15 @@ export default function Product() {
       </ul>
     </div>
   );
+}
+
+export async function getServerSideProps() {
+  const res = await fetch("http://localhost:3000/api/products");
+  const products = await res.json();
+
+  return {
+    props: {
+      products,
+    },
+  };
 }
