@@ -1,26 +1,37 @@
-# Server-Side Data Fetching with getServerSideProps in Next.js
+# Integrating Prisma in Next.js
 
-This branch covers server-side data fetching in Next.js using the `getServerSideProps` method.
+This branch covers integrating Prisma in a Next.js application.
 
 ## Description
 
-In Next.js, we can fetch data on the server before rendering a page using `getServerSideProps`. This lesson teaches how to implement server-side data fetching, allowing us to fetch data dynamically and pass it to our page components.
+In this lesson, we will learn how to integrate Prisma in a Next.js application. Prisma is an open-source database toolkit that makes it easy to query your database. We will set up Prisma, define our data model using Prisma schema, and query our database using Prisma Client.
 
 ## Getting Started
 
-To get started with this lesson, clone this repository and switch to the `server-side-fetching` branch.
+To get started with this lesson, clone this repository and switch to the `prisma-integration` branch.
 
 ```bash
 git clone https://github.com/dannycahyo/next-guru.git
-git checkout server-side-fetching
+git checkout prisma-integration
 ```
+
+Since we're adding prisma & @prisma/client dependecies, don't to forget to sync the dependencies by running `yarn install`.
+
+## Important Script
+
+- `npx prisma init` - Initialize Prisma in your project.
+- `npx prisma studio` - Open Prisma Studio to view your database.
+- `npx prisma migrate dev --name init` - Create a migration for your database.
 
 ## Lesson Content
 
-- Understand server-side rendering in Next.js.
-- Fetch data on the server using `getServerSideProps`.
-- Pass fetched data to page components.
+- Understand how Prisma works in a Next.js project.
+- Set up Prisma in a Next.js project.
+- Define your data model using Prisma schema.
+- Query your database using Prisma Client.
+- Understand the benefits of type safety with Prisma.
 
 ## Further Reading
 
-- [getServerSideProps](https://nextjs.org/docs/pages/building-your-application/data-fetching/get-server-side-props)
+- [Prisma](https://www.prisma.io)
+- [Next.js with Prisma](https://www.prisma.io/nextjs)
