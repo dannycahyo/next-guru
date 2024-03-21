@@ -9,6 +9,20 @@ Before you start with the workshop, make sure you have the following installed o
 - [Node.js](https://nodejs.org) (v18 or later)
 - [Yarn](https://yarnpkg.com) (v1.22 or later)
 
+## Environment Variables
+
+This project uses the following environment variables for OAuth with GitHub:
+
+- `GITHUB_ID`: This is the Client ID of your GitHub OAuth App. You can get this value from your [GitHub OAuth Apps settings](https://github.com/settings/developers).
+
+- `GITHUB_SECRET`: This is the Client Secret of your GitHub OAuth App. You can get this value from your [GitHub OAuth Apps settings](https://github.com/settings/developers).
+
+- `NEXTAUTH_URL`: This is the base URL of authentication your Next.js application. In our case, it will be `http://localhost:3000/api/auth` for local development.
+
+- `SECRET`: This is a secret key used by NextAuth.js for cookie signing and encryption. This should be a long, random and secure string.
+
+You can set these environment variables in a `.env` file at the root of your project:
+
 ## Getting Started
 
 To get started with the workshop, clone this repository and install the dependencies using the following commands:
