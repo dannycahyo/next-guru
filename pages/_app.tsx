@@ -1,7 +1,9 @@
 import { RouteProtection } from "@/components/RouteProtection";
 import "@/styles/globals.css";
 import { SessionProvider } from "next-auth/react";
-import { AppProps } from "next/app";
+import { trpc } from "@/utils/trpc";
+
+import type { AppProps } from "next/app";
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
@@ -13,4 +15,4 @@ const App = ({ Component, pageProps }: AppProps) => {
   );
 };
 
-export default App;
+export default trpc.withTRPC(App);

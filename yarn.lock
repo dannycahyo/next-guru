@@ -223,6 +223,38 @@
   dependencies:
     tslib "^2.4.0"
 
+"@tanstack/query-core@5.28.6":
+  version "5.28.6"
+  resolved "https://registry.yarnpkg.com/@tanstack/query-core/-/query-core-5.28.6.tgz#a3bdb108f9f8d4e2ba3163068dbe6ff55b905a81"
+  integrity sha512-hnhotV+DnQtvtR3jPvbQMPNMW4KEK0J4k7c609zJ8muiNknm+yoDyMHmxTWM5ZnlZpsz0zOxYFr+mzRJNHWJsA==
+
+"@tanstack/react-query@^5.28.6":
+  version "5.28.6"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-query/-/react-query-5.28.6.tgz#0d52b0a98a1d842debf9c65496e20a9981a23bc4"
+  integrity sha512-/DdYuDBSsA21Qbcder1R8Cr/3Nx0ZnA2lgtqKsLMvov8wL4+g0HBz/gWYZPlIsof7iyfQafyhg4wUVUsS3vWZw==
+  dependencies:
+    "@tanstack/query-core" "5.28.6"
+
+"@trpc/client@^11.0.0-next-beta.318":
+  version "11.0.0-next-beta.318"
+  resolved "https://registry.yarnpkg.com/@trpc/client/-/client-11.0.0-next-beta.318.tgz#181ed3c445a851a68abf761d31a2d3984a65f5a0"
+  integrity sha512-R3IlUZqN3WKNNWsayMiVP6JqWVdyNSuwQmBQY7VqVepUBV210uo4GoFLv2vmmegOlHzgx9IUZG7u1grN1v1nAg==
+
+"@trpc/next@^11.0.0-next-beta.318":
+  version "11.0.0-next-beta.318"
+  resolved "https://registry.yarnpkg.com/@trpc/next/-/next-11.0.0-next-beta.318.tgz#b04f25f2589574a8bf52bca30f7c63b6a46052a2"
+  integrity sha512-qeWfJ1vPm7GchLmMZz5Gj+mBka0CRci0bCKEhGoG8RSvI/+9GbbhZHKRRDnlsN81CgexJ2e2nULET9ESO6rt+Q==
+
+"@trpc/react-query@^11.0.0-next-beta.318":
+  version "11.0.0-next-beta.318"
+  resolved "https://registry.yarnpkg.com/@trpc/react-query/-/react-query-11.0.0-next-beta.318.tgz#c7edf9695c5a68b4fa046c0ae3442bbf09a9dfda"
+  integrity sha512-T6l4+OuOkE4yylUqtT5EiLXo0M5+XW6YaKqnTCMkELQrrPmq3Ok0eKfhWy1Xk+ayx02POO9fTzNhITz3BID21Q==
+
+"@trpc/server@^11.0.0-next-beta.318":
+  version "11.0.0-next-beta.318"
+  resolved "https://registry.yarnpkg.com/@trpc/server/-/server-11.0.0-next-beta.318.tgz#0ca3930870368734f2fb7eec9b9ff7dd769709e8"
+  integrity sha512-lxwWfqgv3LvIfhagCElDtNEY6C2sQU3o43OH0vn9hQ+7o9j+JHwEZjZz1ixvm3wUZvwZ68LheXuKL9RdVn1d4w==
+
 "@types/json5@^0.0.29":
   version "0.0.29"
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
@@ -2359,6 +2391,11 @@ ts-api-utils@^1.0.1:
   resolved "https://registry.yarnpkg.com/ts-api-utils/-/ts-api-utils-1.3.0.tgz#4b490e27129f1e8e686b45cc4ab63714dc60eea1"
   integrity sha512-UQMIo7pb8WRomKR1/+MFVLTroIvDVtMX3K6OUir8ynLyzB8Jeriont2bTAtmNPa1ekAgN7YPDyf6V+ygrdU+eQ==
 
+ts-pattern@^5.0.8:
+  version "5.0.8"
+  resolved "https://registry.yarnpkg.com/ts-pattern/-/ts-pattern-5.0.8.tgz#47fa76776350bfbffaa6252a69ce5990ae05db95"
+  integrity sha512-aafbuAQOTEeWmA7wtcL94w6I89EgLD7F+IlWkr596wYxeb0oveWDO5dQpv85YP0CGbxXT/qXBIeV6IYLcoZ2uA==
+
 tsconfig-paths@^3.15.0:
   version "3.15.0"
   resolved "https://registry.yarnpkg.com/tsconfig-paths/-/tsconfig-paths-3.15.0.tgz#5299ec605e55b1abb23ec939ef15edaf483070d4"
@@ -2551,3 +2588,8 @@ yocto-queue@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
+
+zod@^3.22.4:
+  version "3.22.4"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.22.4.tgz#f31c3a9386f61b1f228af56faa9255e845cf3fff"
+  integrity sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==

@@ -1,30 +1,30 @@
-# Authentication with NextAuth.js
+# Integrating with tRPC
 
-This branch covers integrating NextAuth.js in a Next.js application.
+This branch covers integrating tRPC in a Next.js application.
 
 ## Description
 
-In this lesson, we will learn how to integrate NextAuth.js in a Next.js application. NextAuth.js is a complete open source authentication solution for Next.js applications. It is designed from the ground up to support Next.js and Serverless.
+In this lesson, we will learn how to integrate tRPC in a Next.js application. tRPC is a framework for building typesafe APIs, and it is designed to work with Next.js out of the box.
 
 ## Getting Started
 
-To get started with this lesson, clone this repository and switch to the `nextauth-integration` branch.
+To get started with this lesson, clone this repository and switch to the `trpc-integration` branch.
 
 ```bash
 git clone https://github.com/dannycahyo/next-guru.git
-git checkout nextauth-integration
+git checkout trpc-integration
 ```
 
-Since we're adding next-auth dependency, don't forget to sync the dependencies by running `yarn install`.
+Since we're adding tRPC dependency, don't forget to sync the dependencies by running `yarn install`.
 
 ## Lesson Content
 
-- Understand how NextAuth.js works in a Next.js project.
-- Set up NextAuth.js in a Next.js project.
-- Configure different authentication providers.
-- Protect routes and API endpoints.
-- Understand the benefits of session management with NextAuth.js.
+- Setting up tRPC in a Next.js project
+- Defining your API routes using tRPC routers
+- Querying your API from the client using tRPC client
+- Understanding the benefits of type safety with tRPC
 
 ## Further Reading
 
-- [NextAuth.js Documentation](https://next-auth.js.org/)
+- [tRPC Documentation](https://trpc.io/)
+- [tRPC with Next.js](https://trpc.io/docs/client/nextjs)
