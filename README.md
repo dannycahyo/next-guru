@@ -60,13 +60,13 @@ This will start the development server and you can access the application at [ht
   - Handling different HTTP methods in API routes
   - Accessing request data in API route handlers
 
-## Lesson 4: Server-Side Data Fetching with `getServerSideProps`
+## Lesson 4: Data Fetching with SSR, CSR, SSG, ISR
 
 - **Branch Name:** server-side-fetching
 - **Description:** This lesson focuses on server-side data fetching in Next.js using `getServerSideProps`.
 - **Topics Covered:**
-  - Understanding server-side rendering in Next.js
-  - Fetching data on the server using `getServerSideProps`
+  - Understanding SSR, CSR, SSG, ISR in Next.js
+  - Fetching data on server-side rendering using `getServerSideProps`, on client-side rendering on component controlled, static-side generation using `getStaticProps`, incremental static regeneration with revalidate and dynamic path with `getStaticPath`
   - Passing fetched data to page components
 
 ## Lesson 5: Integrating Prisma
